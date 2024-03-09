@@ -14,17 +14,17 @@
 		CREATE TABLE categories {
 		id INTEGER AUTO INCREMENT PRIMARY KEY,
 		name varchar(255)
-     };
+       };
 
 	Items :
-	CREATE TABLE items {
+		CREATE TABLE items {
 		id INTEGER AUTO INCREMENT PRIMARY KEY,
 		name varchar(255),
 		descriptio varchar(255),
 		price integer,
 		stock integer,
 		category_id integer (foreign key references id on categories)
-    }
+       };
 
 3. Memasukkan Data pada Table 
 	INSERT INTO users (name, email) VALUES 
@@ -48,7 +48,7 @@
 
 	b. SELECT * FROM items WHERE price > 1000000;
 
-	    SELECT * FROM items WHERE name LIKE '%uniklo%' OR name LIKE '%watch%' OR name LIKE 		'%sang%';
+	    SELECT * FROM items WHERE name LIKE '%uniklo%' OR name LIKE '%watch%' OR name LIKE '%sang%';
 
 	c. SELECT items.name, items.description 
 	    FROM items
